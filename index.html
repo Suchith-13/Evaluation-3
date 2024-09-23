@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation 3</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color:#f4f4f4;
+        }
+        header{
+            background-color: #1c1e22;
+            color: white;
+            padding: 10px 20px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            gap: 15px;
+        
+        }
+        .nav-items #{
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+
+        }
+        .btn{
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .hero{
+            text-align: center;
+            padding: 100px 20px;
+            color:black;
+        }
+        .booking-form{
+            margin-top: 30px;
+            display: inline-flex;
+            border-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .booking-form input,
+        .booking-form select{
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .book-now{
+            background-color:black;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .about-us{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .about-text{
+            flex:1;
+            padding-right: 20px;
+        }
+        .about-images img{
+            width: 100%;
+            border-radius: 5px;
+
+            
+        }
+        .hirito-h1{
+            color: #e8ac30;
+        }
+
+        .features{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #fff;
+            align-items: center;
+
+         }
+        .room-section,.customer-review,.gallery-section{
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .room-grid{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .room-card{
+            width: 300px;
+            height:300px;
+            
+            border-radius: 5px;
+           
+        }
+        .room-card img{
+            width: 100%;
+            border-radius: 5px;
+
+        }
+        .customer-review h1{
+            text-align: center;
+
+        }
+        .customer-review img{
+            text-align: left;
+        }
+        .customer{
+            display: flex;
+
+
+        }
+        .customer img{
+            height: 500px;
+            width: 450px;
+        }
+
+        .gallery-section h2{
+            text-align: center;
+            
+          
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        .gallery img{
+            width: 300px;
+            height: 300px; 
+        }
+        .blog-posts{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .post{
+            background-color: #fff;
+            border-radius: 8px;
+
+        }
+       .post img{
+        width: 100%;
+        height: 200px;
+
+       }
+       .post-content{
+        padding: 15px;
+       }
+       .tag{
+        display: inline-block;
+        background-color:#e8ac30;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+       }
+       footer{
+        background-color:#1e1e1e;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+
+       }
+       .footer-content{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        
+       }
+       .footer-content .contact {
+        text-align: left;
+        justify-content: space-around;
+       }
+       .form{
+        display: flex;
+        align-items: center;
+       }
+       .links{
+        display: inline-block;
+        color: white;
+       }
+       .newsletter .form{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+       }
+       
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <div class="nav-items">
+                <img src="https://preview.colorlib.com/theme/hiroto/img/logo.png" alt="hirito">
+                <p class="#">Home</p>
+                <p class="#">Rooms</p>
+                <p class="#">About Us</p>
+                <p class="#">News</p>
+                <p class="#">Contact</p>
+                <p class="btn">Book Now</p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="hirito-h1">Welcome HIRITO</h2>
+            <h1>Experience the greatest for your holidays.</h1>
+            <div class="booking-form">
+                <input type="text" placeholder="Search Location">
+                <input type="date" value="2024-09-17">
+                <input type="date" value="2024-09-18">
+                <select>
+                    <option>2 Adults,1 Child</option>
+                    <option>1 Adult</option>
+                    <option>3 Adults</option>
+                </select>
+                <button class="book-now">Book Now</button>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="about-text">
+                <h3>ABOUT US</h3>
+                <h2>Welcome Hiroto Hotel In Street L'Abreuvoir</h2>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                <img src="https://preview.colorlib.com/theme/hiroto/img/home-about/sign.png" alt="Signature">
+            </div>
+            <div class="about-images">
+                <img src="https://preview.colorlib.com/theme/hiroto/img/home-about/home-about.png" alt="img">
+            </div>
+            
+        </section>
+    </main>
+    <section class="features">
+        <div class="Free Wi-Fi">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-1.png" alt="wifi logo">
+            <h2>Free Wi-Fi</h2>
+            <p>The massive investment in a hotel or resort requires constant reviews and control in order to make it a successful investment.</p>
+
+        </div>
+        <div class="Premium Pool">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-2.png" alt="pool logo">
+            <h2>Premium Pool</h2>
+            <p>Choose from 4 unique ready made concepts, let us help you create the concept perfect for you or let HCA.</p>
+        </div>
+
+        <div class="Coffee Maker">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-3.png" alt="Coffee Maker logo">
+            <h2>Coffee Maker</h2>
+            <p>HCA's Owner's Representation is taking care of just these important factors, may it be through regular site visits and spot checks.</p>
+        </div>
+        <div class="Bar Wine">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-4.png" alt="Bar Wine logo">
+            <h2>Bar Wine</h2>
+            <p>For properties with third party management companies, HCA Consultants will as well administer the terms and conditions.</p>
+        </div>
+        <div class="TV HD">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-5.png" alt="logo">
+            <h2>TV HD</h2>
+            <p>We provide a critical analysis of a hotel's marketing strategy, bench-marking it against industry and competitive practices.</p>
+        </div>
+        <div class="Restaurant">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/services/services-6.png" alt="logo">
+            <h2>Restaurant</h2>
+            <p>A hotel and restaurant investment deserves careful and market oriented financial planning and projections.</p>
+        </div>
+
+     
+    </section>
+    <section class="room-section">
+        <h3>OUR ROOM</h3>
+        <h1>Explore Our Hotel</h1>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="./card1.jpeg" alt="room">
+                <p>Deluxe Room</p>
+                <p>$55/day</p>
+            </div>
+            <div class="room-card">
+                <img src="./card2.jpeg" alt="room">
+                <p>Deluxe Room</p>
+                <p>$85/day</p>
+            </div>
+            <div class="room-card">
+                <img src="./card 3.jpeg" alt="room">
+                <p>Deluxe Room</p>
+                <p>$94/day</p>
+            </div>
+            <div class="room-card">
+                <img src="./card 4.jpeg" alt="room">
+                <p>Deluxe Room</p>
+                <p>$71/day</p>
+            </div>
+        </div>
+    </section>
+    <section class="customer-review">
+        <h2>What do customers say about us?</h2>
+        <div class="customer">
+            <img src="https://preview.colorlib.com/theme/hiroto/img/testimonial-left.jpg" alt="customer">
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        
+    </section>
+    <section class="gallery-section">
+        <h2>Explore The Most Beautiful In The Hotel</h2>
+        <div class="gallery">
+            <img src="./pool.avif" alt="photo">
+            <img src="./gallery1.jpeg" alt="photo">
+            <img src="./gallery 2.jpeg" alt="photo">
+            <img src="./gallery 3.jpeg" alt="photo">
+
+        </div>
+    </section>
+    <section class="blog-posts">
+        <div class="post hotel">
+            <img src="./hotel.jpeg" alt="hotel">
+            <div class="post-content">
+                <span class="tag">Hotel</span>
+                <h2>Ut enim ad minim veniam, quis nostrud</h2>
+                <span class="date"> 19th March, 2019</span>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="post restaurant">
+            <img src="./restuarent.jpeg" alt="photo">
+            <div class="post-content">
+                <span class="tag">Restaurant</span>
+                <h2>Ut enim ad minim veniam, quis nostrud</h2>
+                <span class="date"> 22th March, 2019</span>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="post travel">
+            <img src="./travel.jpeg" alt="photo">
+            <div class="post-content">
+                <span class="tag">Travel</span>
+                <h2>Ut enim ad minim veniam, quis nostrud</h2>
+                <span class="date">  25th March, 2019</span>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="post booking">
+            <img src="./booking.jpeg" alt="photo">
+            <div class="post-content">
+                <span class="tag">Travel</span>
+                <h2>Ut enim ad minim veniam, quis nostrud</h2>
+                <span class="date"> 29th March, 2019</span>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <img src="https://preview.colorlib.com/theme/hiroto/img/logo.png" alt="hiroto">
+                <p>(123) 456-78-91096</p>
+                <p>Ernser Vista Suite 437, NY</p>
+                <p>Info.colorlib@gmail.com</p>
+            </div>
+            <div class="links">
+                <p>Home</p>
+                <p>Bookings</p>
+                <p>About Us</p>
+                <p>Review</p>
+                <p>Contact</p>
+            
+               
+            </div>
+            <div class="newsletter">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" placeholder="Your E-mail Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
